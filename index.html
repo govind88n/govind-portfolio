@@ -1,65 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Govind Portfolio</title>
-  <link rel="stylesheet" href="style.css"/>
-  <link 
-    rel="stylesheet" 
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
-    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
-    crossorigin="anonymous" 
-    referrerpolicy="no-referrer" 
-  />
-</head>
-<body>
-  <div class="portfolio-container">
-    <ul class="navlist">
-      <li><a href="#" class="active">Home</a></li>
-      <li><a href="#">Work</a></li>
-      <li><a href="#">Content</a></li>
-      <li><a href="#">Service</a></li>
-    </ul>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Govind Nagar's personal portfolio – frontend web developer with skills in HTML, CSS, JavaScript, and React."
+    />
+    <title>Govind Nagar | Web Developer</title>
+    <link rel="stylesheet" href="stylesheet.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo">Portfolio</a>
+      <nav class="navbar">
+        <a href="#">Home</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+        <a href="#form">Form</a>
+      </nav>
+    </header>
 
-    <div class="left-container">
-      <div class="icons">
-        <!-- Instagram Logo with clickable link -->
-        <a href="https://www.instagram.com/itz.govind___?igsh=MTF5aHN4eDg0M2ZyMQ=="target="_blank">
-          <i class="fa-brands fa-instagram"></i>
-        </a>
-
-        <!-- LinkedIn Logo with clickable link -->
-        <a href="https://www.linkedin.com/in/govind-nagar-307a66336?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
-          <i class="fa-brands fa-linkedin"></i>
-        </a>
-
-        <a href="https://www.twitter.com/@govindnagar8839" target="_blank">
-        <i class="fa-brands fa-twitter"></i>
-        </a>
-
-
-        <i class="fa-brands fa-facebook"></i>
-
-
-      </div>
-      <div class="content">
-        <p class="intro">Hi !! i am  <span> GOVIND</span></p>
-        <h1>Web devloper.</h1>
-        <p class="detail">I am a student at Medicaps University, excited about exploring the world of technology. I recently created my first website, which was a great learning experience. It inspired me to keep building and improving my skills in web development.</p>
-        <div class="btn-container">
-          <button> hello </button>
-          <button>  H I  </button>
+    <section class="home">
+      <div class="home-content">
+        <h3 id="its">Hello, it's me</h3>
+        <h1 id="name">Govind Nagar</h1>
+        <p>
+          I am a student at Medicaps University, excited about exploring the
+          world of technology.<br />
+          I recently created my first website, which was a great learning
+          experience.<br />
+          It inspired me to keep building and improving my skills in web
+          development.<br />
+          I'm a web designer with over 1 year of experience in website and
+          frontend design.
+        </p>
+        <div class="slide-image-container">
+          <img src="second-img.png" alt="Govind working on a project" />
         </div>
       </div>
-    </div>
+      <div class="circular-bg"></div>
+    </section>
 
-    <div class="right-container"></div>
+    <hr style="color: azure" />
 
-    <div class="design">
-      <div class="circle"></div>
-      <div class="circle"></div>
-    </div>
-  </div>
-</body>
+    <section class="skills-section" id="skills">
+      <h2>My Skills</h2>
+      <div class="skills-container">
+        <div class="skill-box">
+          <i class="fab fa-html5"></i>
+          <span>HTML</span>
+          <p>HTML is used to create and structure content on the web.</p>
+        </div>
+        <div class="skill-box">
+          <i class="fab fa-css3-alt"></i>
+          <span>CSS</span>
+          <p>CSS styles and lays out web pages beautifully.</p>
+        </div>
+        <div class="skill-box">
+          <i class="fab fa-js-square"></i>
+          <span>JavaScript</span>
+          <p>JS adds interactivity like sliders, buttons, and animations.</p>
+        </div>
+        <div class="skill-box">
+          <i class="fab fa-react"></i>
+          <span>React</span>
+          <p>
+            A JavaScript library for building user interfaces with components.
+          </p>
+        </div>
+        <div class="skill-box">
+          <i class="fab fa-python"></i>
+          <span>Python</span>
+          <p>Python is used in web, data science, automation, and more.</p>
+        </div>
+      </div>
+    </section>
+
+    <hr style="color: aquamarine" />
+
+    <section class="contact-section" id="contact">
+      <h2>my social media accound</h2>
+      <div class="contact-container">
+        <div class="contact-box">
+          <a
+            href="https://www.instagram.com/itz.govind___?igsh=MTF5aHN4eDg0M2ZyMQ=="
+            target="_blank"
+            ><i class="fab fa-instagram"></i> Instagram</a
+          >
+        </div>
+        <div class="contact-box">
+          <a
+            href="https://www.linkedin.com/in/govind-nagar-307a66336"
+            target="_blank"
+            ><i class="fab fa-linkedin"></i> LinkedIn</a
+          >
+        </div>
+      </div>
+    </section>
+    <hr style="color: beige" />
+    <section id="form">
+      <form
+        name="google-sheet"
+        method="post"
+        autocomplete="off"
+        novalidate
+        action="https://script.google.com/macros/s/AKfycbw30YrJ669oUS2hdmqanxX_caXJpBJ9xqscXcaJvZBvclr41BMnq-J73_bHVZz6jGAFMA/exec"
+      >
+        <h2>Contact Me</h2>
+
+        <label for="name">Your Name</label>
+        <input
+          type="text"
+          id="name"
+          name="Name"
+          placeholder="Your Name"
+          required
+          autocomplete="name"
+        />
+
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="Email"
+          placeholder="you@example.com"
+          required
+          autocomplete="email"
+        />
+
+        <label for="mobile">Mobile</label>
+        <input
+          type="text"
+          id="mobile"
+          name="Mobile"
+          placeholder="10 digit mobile number"
+          pattern="[0-9]{10}"
+          title="Enter 10 digit mobile number"
+          required
+          autocomplete="tel"
+        />
+
+        <label for="comment">Your Comment</label>
+        <textarea
+          id="comment"
+          name="Comment"
+          placeholder="Write your comment here"
+          required
+        ></textarea>
+
+        <input type="submit" value="Submit" />
+        <div class="confirmation" id="confirmationMessage">
+          Thank you! Your form has been submitted.
+        </div>
+      </form>
+    </section>
+
+    <script>
+      const form = document.forms["google-sheet"];
+      const confirmation = document.getElementById("confirmationMessage");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        fetch(form.action, {
+          method: "POST",
+          body: new FormData(form),
+        })
+          .then((response) => {
+            if (response.ok) {
+              confirmation.classList.add("show");
+              form.reset();
+              setTimeout(() => {
+                confirmation.classList.remove("show");
+              }, 4000);
+            } else {
+              alert("Oops! Something went wrong. Please try again.");
+            }
+          })
+          .catch((error) => {
+            alert("Network error. Please check your connection and try again.");
+            console.error("Error!", error.message);
+          });
+      });
+    </script>
+  </body>
 </html>
